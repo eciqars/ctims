@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dashboard</title>
+
+        <!-- Stylesheet/CSS -->
+        <link rel="stylesheet" href="admin-db-style.css">
+
+        <!-- Icons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <!-- Sidebar Design -->
+        <nav class="sidebar close">
+            <header>
+                <div class="image-text">
+                    <span class="image">
+                        <img src="CTIMS LOGO.png" alt="Logo">
+                    </span>
+                    <div class="text header-text">
+                        <span class="name">CTIMS</span> <!-- Change Site Title Here -->
+                        <span class="profession">Administrator</span> <!-- Change Role Here -->
+                    </div>
+                </div>
+
+                <i class='bx bx-chevron-right toggle'></i>
+            </header>
+
+            <!-- Sidebar List -->
+            <div class="menu-bar">
+                <div class="menu">
+                    <li class="search-box">
+                            <i class='bx bx-search icon'></i> <!-- Change Icon Here -->
+                            <input type="text" placeholder="Search...">
+                    </li>
+                    <ul class="menu-links">
+                        <li class="nav-link">
+                            <a href="admin-db.html">
+                                <i class='bx bx-stats icon'></i> <!-- Change Icon Here -->
+                                <span class="text nav-text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="admin-user-m.html">
+                                <i class='bx bxs-user-plus icon'></i> <!-- Change Icon Here -->
+                                <span class="text nav-text">Users</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bx-cog icon'></i> <!-- Change Icon Here -->
+                                <span class="text nav-text">System</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Bottom Content -->
+                <div class="bottom-content">
+                    <li class="">
+                        <a href="#">
+                            <i class='bx bx-log-out icon'></i> <!-- Change Icon Here -->
+                            <span class="text nav-text">Logout</span>
+                        </a>
+                    </li>
+
+                    <li class="mode">
+                        <div class="moon-sun">
+                            <i class='bx bx-moon icon moon'></i> <!-- Change Icon Here -->
+                            <i class='bx bx-sun icon sun'></i> <!-- Change Icon Here -->
+                        </div>
+                        <span class="mode-text text">Dark Mode</span>
+
+                        <div class="toggle-switch">
+                            <span class="switch"></span>
+                        </div>
+                    </li>
+
+                </div>
+            </div>
+        </nav>
+
+        <section class="home">
+            <p class="title">Welcome, Administrator!</p>
+            <p class="subtitle">Administrator Dashboard</p><br>
+            <div class="db"> Place Statistics Here </div>
+        </section>
+
+        <script src="a-script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Product Management</title>
+
+        <!-- Stylesheet/CSS -->
+        <link rel="stylesheet" href="lm-eq-style.css">
+
+        <!-- Icons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <!-- Sidebar Design -->
+        <nav class="sidebar close">
+            <header>
+                <div class="image-text">
+                    <span class="image">
+                        <img src="CTIMS LOGO.png" alt="Logo">
+                    </span>
+                    <div class="text header-text">
+                        <span class="name">CTIMS</span> <!-- Change Site Title Here -->
+                        <span class="profession">Logistics Manager</span> <!-- Change Role Here -->
+                    </div>
+                </div>
+
+                <i class='bx bx-chevron-right toggle'></i>
+            </header>
+
+            <!-- Sidebar List -->
+            <div class="menu-bar">
+                <div class="menu">
+                    <li class="search-box">
+                            <i class='bx bx-search icon'></i> <!-- Change Icon Here -->
+                            <input type="text" placeholder="Search...">
+                    </li>
+                    <ul class="menu-links">
+                        <li class="nav-link">
+                            <a href="lm-db.html">
+                                <i class='bx bx-stats icon'></i> <!-- Change Icon Here -->
+                                <span class="text nav-text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="lm-pm.html">
+                                <i class='bx bxs-shopping-bag-alt icon'></i> <!-- Change Icon Here -->
+                                <span class="text nav-text">Products</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="lm-eq.html">
+                                <i class='bx bxs-hard-hat icon'></i> <!-- Change Icon Here -->
+                                <span class="text nav-text">Equipment</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="executive-db.html">
+                                <i class='bx bxs-folder-open icon'></i> <!-- Change Icon Here -->
+                                <span class="text nav-text">Rent</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="executive-db.html">
+                                <i class='bx bxs-cart-alt icon'></i> <!-- Change Icon Here -->
+                                <span class="text nav-text">Reservation</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- Bottom Content -->
+                <div class="bottom-content">
+                    <li class="">
+                        <a href="#">
+                            <i class='bx bx-log-out icon'></i> <!-- Change Icon Here -->
+                            <span class="text nav-text">Logout</span>
+                        </a>
+                    </li>
+
+                    <li class="mode">
+                        <div class="moon-sun">
+                            <i class='bx bx-moon icon moon'></i> <!-- Change Icon Here -->
+                            <i class='bx bx-sun icon sun'></i> <!-- Change Icon Here -->
+                        </div>
+                        <span class="mode-text text">Dark Mode</span>
+
+                        <div class="toggle-switch">
+                            <span class="switch"></span>
+                        </div>
+                    </li>
+
+                </div>
+            </div>
+        </nav>
+
+        <section class="home">
+            <p class="title">Equipment Management</p>
+            <p class="subtitle">Add, view, modify, manage, and delete equipment.</p><br>
+            <hr><br>
+            <div class="title-2"> Add Equipment </div>
+            <div class="body-text"> Please enter the complete details of the equipment being added. </div><br>
+            <div class="row">
+                <div class="column">
+                    <form action="">
+                        
+                        <label for="username">Equipment Name</label><br>
+                    <input type="text" id="ename" name="product-name" placeholder="Enter equipment name.."><br>
+
+                    <label for="fname">Equipment Description</label><br>
+                    <textarea id="edesc" name="product-description" placeholder="Enter equipment description..." style="height:200px"></textarea><br>
+                
+                    </form>
+                </div>
+                <div class="column">
+                    <form action="">
+                        
+                        <label for="lname">Equipment No.</label>
+                        <input type="text" id="enum" name="product-num" placeholder="Enter equipment number.."><br>
+                    
+                        <label for="country">Equipment Quantity</label>
+                        <input type="text" id="eqty" name="product-qty" placeholder="Enter equipment quantity.."><br>
+    
+                        <label for="country">Equipment Availability</label><br>
+                        <div class="radio-div">
+                            <input type="radio" id="available" name="drone" value="available" checked>
+                            <label for="available">Available</label>
+                          </div>
+                      
+                          <div class="radio-div">
+                            <input type="radio" id="oos" name="drone" value="oos">
+                            <label for="oos">Not Available</label>
+                          </div><br>
+                
+                    <button type="button">Add Equipment</button>
+                
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <script src="a-script.js"></script>
+    </body>
+</html>
